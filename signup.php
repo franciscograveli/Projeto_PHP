@@ -31,28 +31,33 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cadastrar-se</title>
 </head>
 
 <body>
-    <h1>Área de Cadastro:<br></h1>
-    <form action="" method="POST">
-        <label>Nome:</label>
-        <input type="text" name="nome" id="input_nome">
-        <p>
-        </p>
-        <label>E-mail:</label>
-        <input type="text" name="email" id="input_nome">
-        <p>
-        </p>
-        <label>Senha:</label>
-        <input type="password" name="senha" id="input_senha">
-        <p>
-        </p>
-        <button type="submit">Cadastrar</button>
-        <p><a href="index.php">Entrar</a></p>
-    </form>
-
+    <class class="grid_pai">
+        <class class="grid_filho">
+            <class class="lateral1">
+                <img src="img/logo-meta.png" alt="logo-meta" class="logo-meta">
+                <form action="" method="POST">
+                    <input type="text" name="nome" id="input_nome" placeholder="Nome:">
+                    <p>
+                    </p>
+                    <input type="text" name="email" id="input_nome" placeholder="E-mail:">
+                    <p>
+                    </p>
+                    <input type="password" name="senha" id="input_senha" placeholder="Senha:">
+                    <p>
+                    </p>
+                    <button type="submit" id="btn_login">Cadastrar</button>
+                    <a href="index.php" class="btnCad">Entrar</a>
+                </form>
+            </class>
+            <class class="lateral2">
+            </class>
+        </class>
+    </class>
 </body>
 
 </html>
