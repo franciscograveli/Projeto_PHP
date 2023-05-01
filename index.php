@@ -4,9 +4,9 @@ include('bdConect.php');
 if (isset($_POST['email']) || isset($POST['senha'])) {
 
     if (strlen($_POST['email']) == 0) {
-        echo "Preencha seu e-mail";
+        ?><!DOCTYPE html><div class="echo" id="echoruim">Preencha seu email!</div> </html> <?php
     } else if (strlen($_POST['senha']) == 0) {
-        echo "Preencha sua senha";
+        ?><!DOCTYPE html><div class="echo" id="echoruim">Preencha sua senha!</div> </html> <?php
     } else {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
@@ -41,10 +41,13 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/177586c31f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <title>Login Projeto</title>
 </head>
 
 <body>
+
     <class class="grid_pai">
         <class class="grid_filho">
             <class class="lateral1">
@@ -61,8 +64,13 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
                 </form>
             </class>
             <class class="lateral2">
+            <div class="lateral2-text">
+               <h2>Acesse nosso<br> <b>PORTAL DO CLIENTE</b></h2>
+              <p>Informe seu usuário e senha para acessar.</p>
+           </div>
             </class>
         </class>
+    </class>
     </class>
 </body>
 

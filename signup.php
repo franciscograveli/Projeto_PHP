@@ -5,9 +5,9 @@ include("bdConect.php");
 if (isset($_POST['email']) || isset($POST['senha'])) {
 
     if (strlen($_POST['email']) == 0) {
-        echo "Preencha um e-mail";
+        ?><!DOCTYPE html><div class="echo" id="echoruim">Preencha um email!</div> </html> <?php
     } else if (strlen($_POST['senha']) == 0) {
-        echo "Preencha uma senha";
+        ?><!DOCTYPE html><div class="echo" id="echoruim">Preencha uma senha!</div> </html> <?php
     } else {
 
         $nomeCad = $mysqli->real_escape_string($_POST['nome']);
@@ -16,8 +16,9 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
 
         $sql_code = "INSERT INTO user (id, nome, email, senha) VALUES (NULL, '$nomeCad', '$emailCad', '$senhaCad')";
         if ($mysqli->query($sql_code) === TRUE) {
-            echo "Cadastro realizado com sucesso!";
+            ?><!DOCTYPE html><div class="echo" id="echook">Cadastro realizado com sucesso!</div> </html> <?php
         } else {
+            ?><!DOCTYPE html><div class="echo" id="echoruim">Erro ao cadastrar:</div> </html> <?php
             echo "Erro ao cadastrar: " . $mysqli->error;
         }
     }
@@ -51,7 +52,7 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
                     <p>
                     </p>
                     <button type="submit" id="btn_login">Cadastrar</button>
-                    <a href="index.php" class="btnCad">Entrar</a>
+                    <a href="index.php" class="btnLog">Entrar</a>
                 </form>
             </class>
             <class class="lateral2">
