@@ -1,5 +1,4 @@
-
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +9,8 @@ nav{
     z-index: 10;
 
 }
-.navbar a{
+
+.navbar a {
     align-self: flex-end;
     margin-right: 5rem;
     border: solid lightgray 1px;
@@ -19,7 +19,7 @@ nav{
     transition: .5s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: var(--azulC);
     color: var(--light);
     transition: .5s;
@@ -27,12 +27,13 @@ nav{
     border: solid var(--light) 1px;
 }
 
-.logo-nav{
+.logo-nav {
     margin-left: 5rem;
     width: 100px;
     height: auto;
 }
-.banner{
+
+.banner {
     height: 50vh;
     width: 100vw;
     display: flex;
@@ -43,6 +44,7 @@ nav{
     background-repeat: no-repeat;
     background-image: url(../img/banner-1.jpg);
 }
+
 .banner::after {
     z-index: 0;
     position: absolute;
@@ -53,7 +55,7 @@ nav{
     opacity: 0.1;
 }
 
-.txtBanner{
+.txtBanner {
     z-index: 1;
     font-size: calc(1rem + 1vw);
     font-weight: 500;
@@ -63,7 +65,7 @@ nav{
     align-items: center;
 }
 
-section.container{
+section.container {
     height: auto;
     min-height: 100vh;
     width: 100vw;
@@ -74,7 +76,7 @@ section.container{
     background-color: var(--color1);
 }
 
-.header{
+.header {
     margin-top: 10rem;
     width: 100vw;
     display: flex;
@@ -84,7 +86,7 @@ section.container{
     align-items: center;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +96,7 @@ section.container{
     font-weight: bold;
 }
 
-.traco-azul{
+.traco-azul {
     content: '';
     width: 5rem;
     height: 10px;
@@ -103,14 +105,14 @@ section.container{
     border-radius: 1rem;
 }
 
-.subtitle{
+.subtitle {
     width: 60%;
     padding: 1rem 1rem;
     font-weight: 100;
     color: gray;
 }
 
-.content{
+.content {
     margin-top: 10rem;
     width: 90vw;
     display: flex;
@@ -118,18 +120,22 @@ section.container{
     flex-direction: row;
     padding-bottom: 5rem;
 }
+
 @media (max-width:900px) {
-    .txtBanner{
+    .txtBanner {
         font-size: calc(1rem + 1.5vw);
     }
-    .title{
+
+    .title {
         width: 80%;
     }
-    .subtitle{
+
+    .subtitle {
         width: 80%;
     }
 }
-.cards{
+
+.cards {
     margin-top: -5rem;
     width: 100%;
     display: flex;
@@ -140,7 +146,7 @@ section.container{
 }
 
 
-.card{
+.card {
     max-width: 5vw;
     min-width: 250px;
     min-height: 350px;
@@ -149,13 +155,14 @@ section.container{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    text-align:center;
+    text-align: center;
     margin: 1rem 1rem;
     background-color: var(--light);
     border-radius: 1rem;
     transition: .5s;
 }
-.card:hover{
+
+.card:hover {
     z-index: 1;
     border-radius: .25rem;
     transition: .5s;
@@ -163,42 +170,48 @@ section.container{
     transform: translate(0px, -2px);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.366);
 }
-.img-card{
+
+.img-card {
     max-width: 50px;
     min-width: 40px;
     transition: .5s;
     margin-bottom: 1rem;
 }
-.card:hover .img-card{
+
+.card:hover .img-card {
     filter: drop-shadow(-1px 1px 5px rgba(128, 128, 128, 0.275));
-   
+
 }
-.title-card{
+
+.title-card {
     font-size: calc(1rem + 0.5vw);
     font-weight: 600;
 }
-.subtitle-card{
+
+.subtitle-card {
     color: gray;
     font-size: calc(0.5rem + 0.5vw);
     font-weight: 100;
 }
+
 @media (max-width:900px) {
-    .title-card{
+    .title-card {
         font-size: 3rem;
         font-weight: 600;
     }
-    .subtitle-card{
+
+    .subtitle-card {
         color: gray;
         font-size: 1.25rem;
         font-weight: 100;
     }
 }
 
-.card h3{
+.card h3 {
     max-width: 70%;
 }
 
-#btnCard{
+#btnCard {
     min-width: 100px;
     background-color: transparent;
     border-radius: 2rem;
@@ -207,11 +220,12 @@ section.container{
     transition: .75s;
     margin-top: 1.5rem;
 }
-#btnCard:hover{
+
+#btnCard:hover {
     cursor: pointer;
     transition: .5s;
     color: var(--light);
-    background-color:var(--azulC);
+    background-color: var(--azulC);
     border-radius: 2rem;
     padding: .5rem 1rem;
     border: solid 2px var(--light);
