@@ -23,7 +23,7 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
         }
     }
     $mysqli->close();
-}
+}//verificações relacionadas ao cadastro, conexão com banco e alteração no mesmo
 ?>
 <!DOCTYPE html>
 <html lang="pt_br">

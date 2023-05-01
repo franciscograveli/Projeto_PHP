@@ -10,3 +10,4 @@ $result = $mysqli->query("SELECT * FROM user");
 if($mysqli->error){
     die("Erro de Conexão" . $mysqli->error);
 }
+//conexão do banco com extensão mysqli

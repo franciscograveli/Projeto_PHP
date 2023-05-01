@@ -1,5 +1,5 @@
 <?php
-include('bdConect.php');
+include('bdConect.php'); //chamando o arquivo de conexão ao banco de dados
 
 if (isset($_POST['email']) || isset($POST['senha'])) {
 
@@ -28,10 +28,10 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
 
             header("Location: content.php");
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            ?><!DOCTYPE html><div class="echo" id="echoruim">Falha ao logar! E-mail ou senha incorretos</div> </html> <?php
         }
     }
-}
+} //verificações relacionadas ao login e conexão com banco
 ?>
 <!DOCTYPE html>
 <html lang="pt_br">
@@ -72,6 +72,7 @@ if (isset($_POST['email']) || isset($POST['senha'])) {
         </class>
     </class>
     </class>
+
 </body>
 
 </html>
